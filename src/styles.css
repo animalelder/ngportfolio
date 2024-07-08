@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* device specific */
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+/* scrollbar color */
+* {
+  scrollbar-color: color-mix(in oklch, currentColor 35%, transparent)
+    transparent;
+  &:hover {
+    scrollbar-color: color-mix(in oklch, currentColor 60%, transparent)
+      transparent;
+  }
+}
